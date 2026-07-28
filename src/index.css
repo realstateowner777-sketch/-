@@ -1,0 +1,93 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Cairo', sans-serif;
+    background-color: #f8fafc;
+  }
+
+  h1, h2, h3, h4, .font-changa {
+    font-family: 'Changa', sans-serif;
+  }
+}
+
+/* Bento Grid styling utilities */
+.bento-card {
+  background-color: #ffffff;
+  border-radius: 1.5rem; /* rounded-3xl */
+  border: 1px solid rgba(226, 232, 240, 0.9);
+  box-shadow: 0 4px 20px -2px rgba(15, 23, 42, 0.04), 0 2px 6px -1px rgba(15, 23, 42, 0.02);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.bento-card:hover {
+  box-shadow: 0 12px 28px -4px rgba(15, 23, 42, 0.08), 0 4px 12px -2px rgba(15, 23, 42, 0.04);
+}
+
+.bento-card-dark {
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  border-radius: 1.5rem;
+  border: 1px solid rgba(51, 65, 85, 0.6);
+  box-shadow: 0 8px 32px -4px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.bento-glow-blue {
+  box-shadow: 0 0 35px -5px rgba(30, 58, 138, 0.25);
+}
+
+.bento-glow-emerald {
+  box-shadow: 0 0 35px -5px rgba(16, 185, 129, 0.25);
+}
+
+/* Custom subtle scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Eye-comfort Reading Mode High Contrast Styles */
+.reading-mode-active {
+  filter: contrast(115%) saturate(105%);
+  line-height: 1.7;
+}
+
+.reading-mode-active p,
+.reading-mode-active span,
+.reading-mode-active div,
+.reading-mode-active button {
+  font-weight: 600 !important;
+}
+
+.reading-mode-active h1,
+.reading-mode-active h2,
+.reading-mode-active h3,
+.reading-mode-active h4,
+.reading-mode-active h5 {
+  letter-spacing: 0.03em;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+/* Light Theme Overrides while preserving official party brand colors */
+.light-theme-active {
+  background-color: #f1f5f9 !important;
+  color: #0f172a !important;
+}
+
+.light-theme-active .bento-card {
+  background-color: #ffffff !important;
+  border-color: #cbd5e1 !important;
+  color: #0f172a !important;
+}
+
+

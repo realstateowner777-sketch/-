@@ -1,0 +1,8 @@
+{
+  "name": "Remix حزب مستقبل وطن | أمانة مركز سمنود",
+  "description": "منصة الاتصال السياسي وصناعة المحتوى المرئي واستراتيجيات الفيديوهات الفيروسية وإدارة الشكاوى والمبادرات القومية - حزب مستقبل وطن أمانة مركز سمنود 2030",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
